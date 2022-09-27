@@ -11,14 +11,12 @@ public class Testing_1 {
         System.out.println(arr.size()+" "+arr.get(2));
         */
         ArrayList<ArrayList<Integer>> arr_2 = new ArrayList<ArrayList<Integer>>();
-        arr.add(10);
-        arr.add(9);
-        arr_2.add(arr);
-
-        arr.set(0,9);
-        arr.set(1,9);
-
-        arr_2.add(arr);
+        int i;
+        for(i=1;i<=5;i++){
+            arr_2.add(new ArrayList<Integer>());
+            arr_2.get(arr_2.size()-1).add(i);
+            arr_2.get(arr_2.size()-1).add((int)Math.pow(i,3));
+        }
         System.out.println(arr_2);
 
     }
